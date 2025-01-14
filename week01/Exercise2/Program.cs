@@ -5,14 +5,6 @@ class Program
 	static void Main(string[] args)
 	{
 		Console.WriteLine("Hello World! This is the Exercise2 Project.");
-		using System;
-
-class Program
-{
-    static void Main(string[] args )
-    {
-        Console.WriteLine("Hello World! This is the Exercise2 Project.");
-
         Console.Write("Enter your grade percentage: ");
         int grade = int.Parse(Console.ReadLine());
 
@@ -83,5 +75,4 @@ class Program
 
 }
 
-	}
-}
+	

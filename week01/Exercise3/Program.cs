@@ -5,12 +5,6 @@ class Program
 	static void Main(string[] args)
 	{
 		Console.WriteLine("Hello World! This is the Exercise3 Project.");
-		using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
         Console.WriteLine("Welcome to the Guess My Number Game!");
 
         Random random = new Random();
@@ -57,5 +51,4 @@ class Program
         Console.WriteLine("Thanks for playing! Goodbye!");
     }
 }
-	}
-}
+	

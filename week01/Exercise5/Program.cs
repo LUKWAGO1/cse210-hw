@@ -5,14 +5,6 @@ class Program
 	static void Main(string[] args)
 	{
 		Console.WriteLine("Hello World! This is the Exercise5 Project.");
-		using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello world! This is the Exercise5 Project.");
-
         DisplayWelcome();        
         string userName = PromptUserName();
         int userNumber = PromptUserNumber();
@@ -48,5 +40,4 @@ class Program
         Console.WriteLine($"{userName}, the square of your number is {squaredNumber}");
     }
 }
-	}
-}
+

@@ -5,19 +5,9 @@ class Program
 	static void Main(string[] args)
 	{
 		Console.WriteLine("Hello World! This is the Exercise4 Project.");
-		using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World! This is the Exercise4 Project.");
-
-        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
-
-
-        List<int> numbers = new List<int>();
-
+		Console.WriteLine("Enter a list of numbers, type 0 when finished.");
+		List<int> numbers = new List<int>();
+	}
         int input;
 
         do
@@ -46,7 +36,3 @@ class Program
         Console.WriteLine($"The average is: {average}");
         Console.WriteLine($"The largest number is: {max}");
     }
-}
-
-	}
-}
