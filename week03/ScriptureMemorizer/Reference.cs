@@ -1,20 +1,40 @@
 public class Reference
 {
-    public string Book { get; }
-    public int Chapter { get; }
-    public int Verse { get; }
-    public int? EndVerse { get; }
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
 
-    public Reference(string book, int chapter, int verse, int? endVerse = null)
+    // Constructor for single verse
+    public Reference(string book, int chapter, int verse)
     {
-        Book = book;
-        Chapter = chapter;
-        Verse = verse;
-        EndVerse = endVerse;
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = -1; // -1 indicates no end verse (single verse reference)
     }
 
-    public override string ToString()
+    // Constructor for range of verses
+    public Reference(string book, int chapter, int verse, int endVerse)
     {
-        return EndVerse.HasValue ? $"{Book} {Chapter}:{Verse}-{EndVerse}" : $"{Book} {Chapter}:{Verse}";
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = endVerse;
+    }
+
+    // Method to get the display text
+    public string GetDisplayText()
+    {
+        if (_endVerse == -1)
+        {
+            // Single verse reference
+            return $"{_book} {_chapter}:{_verse}";
+        }
+        else
+        {
+            // Range of verses
+            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
+        }
     }
 }

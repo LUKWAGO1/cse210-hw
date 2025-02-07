@@ -1,21 +1,15 @@
 public class Word
 {
-    private string Text { get; }
-    public bool IsHidden { get; private set; }
+    private string _text;
+    private bool _isHidden;
 
     public Word(string text)
     {
-        Text = text;
-        IsHidden = false;
+        // Initialize text and set _isHidden to false
     }
 
-    public void Hide()
-    {
-        IsHidden = true;
-    }
-
-    public string GetDisplayText()
-    {
-        return IsHidden ? new string('_', Text.Length) : Text;
-    }
+    public void Hide() { }
+    public void Show() { }
+    public bool IsHidden() { return false; }
+    public string GetDisplayText() { return ""; }
 }
